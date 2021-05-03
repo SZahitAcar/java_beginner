@@ -6,6 +6,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		ICustomerDal customerDal = new MySqlCustomerDal();
 		customerDal.add();
+		CustomerManager customerManager = new CustomerManager(new SqlServerDal());
+		customerManager.add();
 	}
 
 }
